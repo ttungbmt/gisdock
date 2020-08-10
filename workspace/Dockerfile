@@ -45,8 +45,11 @@ COPY ./scripts/install_gdal.sh /tmp/install_gdal.sh
 
 RUN if [ ${INSTALL_GDAL} = true ]; then \
     chmod +x /tmp/install_gdal.sh && \
+    dos2unix /tmp/install_gdal.sh && \
     /bin/sh -c /tmp/install_gdal.sh && \
     rm -rf /tmp/install_gdal.sh \
 ;fi
 
+
 ADD start.sh /etc/my_init.d
+RUN dos2unix /etc/my_init.d/start.sh
