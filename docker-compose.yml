@@ -169,8 +169,8 @@ services:
         - "PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}"
       ports:
         - "${PGADMIN_PORT}:80"
-      volumes:
-        - ${DATA_PATH_HOST}/pgadmin:/var/lib/pgadmin
+#      volumes:
+#        - ${DATA_PATH_HOST}/pgadmin:/var/lib/pgadmin
       depends_on:
         - "${PGADMIN_DB_ENGINE}"
       networks:
