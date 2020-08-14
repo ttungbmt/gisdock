@@ -322,6 +322,7 @@
     </filter-mapping>
 
     <!--  Enable CORS -->
+    <!--  https://codepen.io/mmsmdali/post/resolve-no-access-control-allow-origin-by-setting-cors?__cf_chl_jschl_tk__=768213ac6f98075e867516e5f19bba9f43dcb37d-1597113504-0-AZVHac1J1oMzhTeHHMrx79lUXURC_Ek-TlxZWjHwg5WaySifQVbanADvA7USZsKPx1uafLffTW12EKDJDTPZOEgzHXJEPOwU-VvK4aemogoqtkBr9hPvkhKMHY31DIuY7l72sj7CQYWk-h-6M925I00d-m2JvPfljE81MkpEyN-FyKNxXFCe25RWy3F5hzN2BVwHvngn_V8pu5DwklVaOlQe285zA4D4ukigssegXqXBSHbcJHFKoPC65kXlj5o4RzNZDhJQfKJBfVG5Is0j_4CSwi9bhtQJpIY8veND6IR1rmVBLUrhYDyIUOBFSslbbVO2o8c-VQyBiUzfG7gh4RikaD3GHnKn05Q5qqqMn8ZATlkN38z6TzYtUn9luR4jP_8Hc3afAT5kQI65vxB1HYbPbAwa5-2pGBleHEWItUSj -->
     <filter>
         <filter-name>CorsFilter</filter-name>
         <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
